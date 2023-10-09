@@ -35,14 +35,14 @@ def verify(result):
         print("Target not in the given list")
 
 
-# Get user input for the sorted array
+# Get user input for an array
 input_str = input("Enter a array of numbers, separated by spaces: ")
 input_list = [int(x) for x in input_str.split()]
 
 
 
 while True:
-    # Get user input for the target element
+    # Get user input for the target element to search
     target = input("Enter the target element to search for (or exit to quit): ")
 
     if str(target) == "exit":
