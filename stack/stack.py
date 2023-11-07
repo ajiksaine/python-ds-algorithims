@@ -20,3 +20,13 @@ class Stack:
         self.top = new_node
         # Increase the size of the stack by one
         self.size += 1
+
+    def pop(self):
+        if self.top is None:
+            return None
+        else:
+            poped_node = self.top
+            self.top = self.top.next
+            self.size -=1
+            poped_node.next = None
+            return poped_node.data
